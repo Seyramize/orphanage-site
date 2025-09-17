@@ -16,7 +16,7 @@ export default function StaffPage() {
         "Licensed Clinical Social Worker",
         "Trauma-Informed Care Specialist",
       ],
-      email: "berthahass1@gmail.com",
+      email: "bertha.haas1@gmail.com",
       phone: "+1 (406) 599-2615 | +233 55 697 6681",
     },
     {

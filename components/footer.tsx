@@ -39,7 +39,7 @@ export function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-3"><MapPin className="h-4 w-4 mt-0.5 text-muted-foreground" /><span>Ntoroso palace, Ghana</span></li>
               <li className="flex items-start gap-3"><Phone className="h-4 w-4 mt-0.5 text-muted-foreground" /><span>+233 55 697 6681</span></li>
-              <li className="flex items-start gap-3"><Mail className="h-4 w-4 mt-0.5 text-muted-foreground" /><span>berthahass1@gmail.com</span></li>
+              <li className="flex items-start gap-3"><Mail className="h-4 w-4 mt-0.5 text-muted-foreground" /><span>bertha.haas1@gmail.com</span></li>
             </ul>
           </div>
 
