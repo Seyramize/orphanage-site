@@ -7,7 +7,7 @@ import Link from "next/link"
 export default function StaffPage() {
   const leadership = [
     {
-      name: "Bertha Akyereko Haas",
+      name: "Bertha Akyereko",
       role: "Founder & Executive Director",
       image: "/founder1.jpg",
       bio: "Bertha co-founded Cajamor Int. & Orphanage Foundation with a vision to create a true family environment for children in need. With years of experience in child welfare, she holds a Master's in Social Work and is passionate about trauma-informed care.",
@@ -16,7 +16,7 @@ export default function StaffPage() {
         "Licensed Clinical Social Worker",
         "Trauma-Informed Care Specialist",
       ],
-      email: "berthaakyereko1@gmail.com",
+      email: "berthahass1@gmail.com",
       phone: "+1 (406) 599-2615 | +233 55 697 6681",
     },
     {
@@ -40,7 +40,7 @@ export default function StaffPage() {
       role: "Board Chairman",
       department: "Board of Directors",
       image: "/chief.jpg",
-      bio: "Berima leads our board of directors with expertise in child psychology and trauma recovery.",
+      bio: "Nana Berima leads our board of directors with expertise in child psychology and trauma recovery.",
       credentials: ["Paramount Chief"],
       specialties: ["Board Chairman"],
     },
@@ -49,18 +49,27 @@ export default function StaffPage() {
       role: "Board Member",
       department: "Board of Directors",
       image: "/wife.jpg",
-      bio: "Michael ensures every child receives quality education support and college preparation guidance.",
+      bio: "Grace ensures every child receives quality education support and college preparation guidance.",
       credentials: ["Chief Mother"],
       specialties: ["Board Member"],
     },
     {
-      name: "Victoria Amankwaa",
+      name: "Prince Amankwaa Akyereko",
       role: "Board Member",
-      department: "Life Skills",
+      department: "Board of Directors",
       image: "/placeholder-user.jpg",
-      bio: "Jennifer develops and oversees our life skills programs that prepare teens for independent living.",
-      credentials: ["MSW - Social Work", "Certified Life Coach"],
-      specialties: ["Independent Living", "Career Counseling", "Financial Literacy"],
+      bio: "Prince our life skills programs that prepare teens for independent living.",
+      credentials: ["Board Member"],
+      specialties: ["Board Member"],
+    },
+    {
+      name: "Dela Bullen",
+      role: "Board Member",
+      department: "Board of Directors",
+      image: "/founder2.jpg",
+      bio: "Dela guides our life skills programs, supporting teens as they prepare for a successful and independent future.",
+      credentials: ["Board Member"],
+      specialties: ["Board Member"],
     },
   ]
 
@@ -195,7 +204,7 @@ export default function StaffPage() {
       </section>
 
       {/* Join Our Team */}
-      <section className="py-16">
+      {/* <section className="py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-balance">Join Our Team</h2>
           <p className="text-lg text-muted-foreground mb-8 text-pretty leading-relaxed">
@@ -211,7 +220,7 @@ export default function StaffPage() {
             </Button>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   )
 }

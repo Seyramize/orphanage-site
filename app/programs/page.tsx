@@ -174,7 +174,7 @@ export default function ProgramsPage() {
       </section>
 
       {/* Program Success */}
-      <section className="py-16 bg-muted">
+      {/* <section className="py-16 bg-muted">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
@@ -210,10 +210,10 @@ export default function ProgramsPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Call to Action */}
-      <section className="py-16 bg-primary text-primary-foreground">
+      {/* <section className="py-16 bg-primary text-primary-foreground">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-balance">Support Our Programs</h2>
           <p className="text-lg mb-8 text-pretty leading-relaxed opacity-90">
@@ -233,7 +233,7 @@ export default function ProgramsPage() {
             </Button>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   )
 }

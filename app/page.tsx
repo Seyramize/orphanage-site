@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Heart, Users, GraduationCap, Home, Calendar, BookOpen, DollarSign } from "lucide-react"
+import { Heart, Users, GraduationCap, Home, DollarSign } from "lucide-react"
 import Link from "next/link"
 
 export default function HomePage() {
@@ -21,9 +21,6 @@ export default function HomePage() {
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
-                  <Link href="/donate">Make a Donation</Link>
-                </Button>
                 <Button asChild variant="outline" size="lg">
                   <Link href="/about">Learn Our Story</Link>
                 </Button>
@@ -113,7 +110,7 @@ export default function HomePage() {
               There are many ways to support our mission and make a difference
             </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-1 gap-8">
             <Card className="text-center hover:shadow-lg transition-shadow duration-300">
               <CardHeader>
                 <DollarSign className="h-12 w-12 text-primary mx-auto mb-4" />
@@ -121,33 +118,19 @@ export default function HomePage() {
                 <CardDescription>Your contribution directly supports our children's needs</CardDescription>
               </CardHeader>
               <CardContent>
-                <Button asChild className="w-full">
-                  <Link href="/donate">Make a Donation</Link>
-                </Button>
-              </CardContent>
-            </Card>
-            <Card className="text-center hover:shadow-lg transition-shadow duration-300">
-              <CardHeader>
-                <Calendar className="h-12 w-12 text-primary mx-auto mb-4" />
-                <CardTitle>Events</CardTitle>
-                <CardDescription>Join us for community events and fundraising activities</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <Button asChild variant="outline" className="w-full bg-transparent">
-                  <Link href="/events">View Events</Link>
-                </Button>
-              </CardContent>
-            </Card>
-            <Card className="text-center hover:shadow-lg transition-shadow duration-300">
-              <CardHeader>
-                <BookOpen className="h-12 w-12 text-primary mx-auto mb-4" />
-                <CardTitle>Stories</CardTitle>
-                <CardDescription>Read inspiring stories from our children and families</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <Button asChild variant="outline" className="w-full bg-transparent">
-                  <Link href="/blog">Read Stories</Link>
-                </Button>
+                <div className="text-left space-y-3 text-muted-foreground">
+                  <p>
+                    We gratefully accept in-kind donations such as clothing (all ages), shoes, school supplies,
+                    non-perishable food items, toiletries, and gently used laptops and phones.
+                  </p>
+                  <p>
+                    To donate items, please call <span className="font-medium text-foreground">+233 55 697 6681</span> or email
+                    <span className="font-medium text-foreground"> berthaakyereko1@gmail.com</span> to arrange drop-off or pickup.
+                  </p>
+                  <p>
+                    Monetary gifts are also appreciated. Bank/Mobile Money details will be shared upon request while we finalize our online donation page.
+                  </p>
+                </div>
               </CardContent>
             </Card>
           </div>
@@ -188,9 +171,11 @@ export default function HomePage() {
             awareness, you can help us continue our mission of providing hope and opportunity to children in need.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" variant="secondary">
-              <Link href="/donate">Donate Today</Link>
-            </Button>
+            {false && (
+              <Button asChild size="lg" variant="secondary">
+                <Link href="/donate">Donate Today</Link>
+              </Button>
+            )}
             <Button
               asChild
               size="lg"

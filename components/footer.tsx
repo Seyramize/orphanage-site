@@ -6,7 +6,7 @@ import { Heart, Mail, MapPin, Phone, Facebook, Twitter, Instagram, Youtube } fro
 export function Footer() {
   const year = new Date().getFullYear()
   return (
-    <footer className="border-t border-border bg-background">
+    <footer className="border-t border-border bg-accent/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
@@ -24,9 +24,13 @@ export function Footer() {
             <ul className="space-y-2 text-sm">
               <li><Link href="/about" className="hover:text-primary">About Us</Link></li>
               <li><Link href="/programs" className="hover:text-primary">Programs</Link></li>
-              <li><Link href="/events" className="hover:text-primary">Events</Link></li>
-              <li><Link href="/blog" className="hover:text-primary">Blog</Link></li>
-              <li><Link href="/donate" className="hover:text-primary">Donate</Link></li>
+              {false && (
+                <>
+                  <li><Link href="/events" className="hover:text-primary">Events</Link></li>
+                  <li><Link href="/blog" className="hover:text-primary">Blog</Link></li>
+                  <li><Link href="/donate" className="hover:text-primary">Donate</Link></li>
+                </>
+              )}
             </ul>
           </div>
 
@@ -35,7 +39,7 @@ export function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-3"><MapPin className="h-4 w-4 mt-0.5 text-muted-foreground" /><span>Ntoroso palace, Ghana</span></li>
               <li className="flex items-start gap-3"><Phone className="h-4 w-4 mt-0.5 text-muted-foreground" /><span>+233 55 697 6681</span></li>
-              <li className="flex items-start gap-3"><Mail className="h-4 w-4 mt-0.5 text-muted-foreground" /><span>berthaakyereko1@gmail.com</span></li>
+              <li className="flex items-start gap-3"><Mail className="h-4 w-4 mt-0.5 text-muted-foreground" /><span>berthahass1@gmail.com</span></li>
             </ul>
           </div>
 

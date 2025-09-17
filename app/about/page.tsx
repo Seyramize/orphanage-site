@@ -12,7 +12,7 @@ export default function AboutPage() {
           <div className="text-center space-y-6">
             <h1 className="text-4xl lg:text-5xl font-bold text-balance">About Cajamor Int. & Orphanage Foundation</h1>
             <p className="text-xl text-muted-foreground text-pretty max-w-3xl mx-auto leading-relaxed">
-              For over 25 years, we've been a beacon of hope for children in need, providing not just shelter, but a
+              For over 9 years, we've been a beacon of hope for children in need, providing not just shelter, but a
               loving family environment where every child can flourish.
             </p>
           </div>
@@ -27,7 +27,7 @@ export default function AboutPage() {
               <h2 className="text-3xl lg:text-4xl font-bold text-balance">Our Story</h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Cajamor Int. & Orphanage Foundation was founded in 1998 by Maria and David Thompson, who saw the urgent need for a
+                  Cajamor Int. & Orphanage Foundation was founded in 2016 by Bertha Akyereko, who saw the urgent need for a
                   safe haven for children who had nowhere else to turn. What started as a small home caring for five
                   children has grown into a comprehensive care facility serving over 150 children annually.
                 </p>
@@ -37,17 +37,18 @@ export default function AboutPage() {
                   life. Every child who comes to us becomes part of our extended family.
                 </p>
                 <p>
-                  Today, we're proud to have helped over 2,000 children transition to successful, independent lives.
+                  Today, we're proud to have helped over 100 children transition to successful, independent lives.
                   Many of our former residents have gone on to college, started careers, and even returned to volunteer
                   and support the next generation of children in our care.
                 </p>
               </div>
             </div>
             <div className="relative">
-              <img
-                src="/warm-orphanage-building-with-children-playing-in-t.jpg"
-                alt="Cajamor Int. & Orphanage Foundation building with children playing"
-                className="rounded-lg shadow-xl w-full h-auto"
+              <video
+                src="/aboutvid.mp4"
+                controls
+                className="rounded-lg shadow-xl w-full h-auto max-h-[400px] object-cover"
+                poster="/3.jpg"
               />
             </div>
           </div>
@@ -113,7 +114,7 @@ export default function AboutPage() {
           </div>
           <div className="grid md:grid-cols-4 gap-8 text-center">
             <div className="space-y-2">
-              <div className="text-4xl font-bold text-primary">2,000+</div>
+              <div className="text-4xl font-bold text-primary">100+</div>
               <div className="text-muted-foreground">Children Served</div>
             </div>
             <div className="space-y-2">
@@ -125,7 +126,7 @@ export default function AboutPage() {
               <div className="text-muted-foreground">Current Residents</div>
             </div>
             <div className="space-y-2">
-              <div className="text-4xl font-bold text-primary">25</div>
+              <div className="text-4xl font-bold text-primary">9</div>
               <div className="text-muted-foreground">Years of Service</div>
             </div>
           </div>
@@ -133,7 +134,7 @@ export default function AboutPage() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 bg-primary text-primary-foreground">
+      {/* <section className="py-16 bg-primary text-primary-foreground">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-balance">Join Our Mission</h2>
           <p className="text-lg mb-8 text-pretty leading-relaxed opacity-90">
@@ -154,7 +155,7 @@ export default function AboutPage() {
             </Button>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   )
 }

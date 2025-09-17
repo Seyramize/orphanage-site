@@ -2,20 +2,20 @@
 
 import { useState } from "react"
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { Heart, Menu, X } from "lucide-react"
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
+  const pathname = usePathname()
 
+  // Hidden per request: Stories (/testimonials), Events (/events), Blog (/blog), Donate button
   const navItems = [
     { href: "/", label: "Home" },
     { href: "/about", label: "About Us" },
     { href: "/programs", label: "Programs" },
     { href: "/staff", label: "Our Team" },
-    { href: "/testimonials", label: "Stories" },
-    { href: "/events", label: "Events" },
-    { href: "/blog", label: "Blog" },
   ]
 
   return (
@@ -30,18 +30,20 @@ export function Navigation() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            {navItems.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="text-foreground hover:text-primary transition-colors duration-200 font-medium"
-              >
-                {item.label}
-              </Link>
-            ))}
-            <Button asChild className="bg-primary hover:bg-primary/90">
-              <Link href="/donate">Donate Now</Link>
-            </Button>
+            {navItems.map((item) => {
+              const isActive = item.href === "/" ? pathname === "/" : pathname.startsWith(item.href)
+              return (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className={`transition-colors duration-200 font-medium ${
+                    isActive ? "text-primary" : "text-foreground hover:text-primary"
+                  }`}
+                >
+                  {item.label}
+                </Link>
+              )
+            })}
           </div>
 
           {/* Mobile menu button */}
@@ -56,23 +58,21 @@ export function Navigation() {
         {isOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 bg-card border-t border-border">
-              {navItems.map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className="block px-3 py-2 text-foreground hover:text-primary hover:bg-muted rounded-md transition-colors duration-200"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {item.label}
-                </Link>
-              ))}
-              <div className="px-3 py-2">
-                <Button asChild className="w-full bg-primary hover:bg-primary/90">
-                  <Link href="/donate" onClick={() => setIsOpen(false)}>
-                    Donate Now
+              {navItems.map((item) => {
+                const isActive = item.href === "/" ? pathname === "/" : pathname.startsWith(item.href)
+                return (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className={`block px-3 py-2 rounded-md transition-colors duration-200 ${
+                      isActive ? "text-primary bg-muted" : "text-foreground hover:text-primary hover:bg-muted"
+                    }`}
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.label}
                   </Link>
-                </Button>
-              </div>
+                )
+              })}
             </div>
           </div>
         )}
