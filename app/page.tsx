@@ -125,7 +125,7 @@ export default function HomePage() {
                   </p>
                   <p>
                     To donate items, please call <span className="font-medium text-foreground">+233 55 697 6681</span> or email
-                    <span className="font-medium text-foreground">bertha.haas1@gmail.com</span> to arrange drop-off or pickup.
+                    <span className="font-medium text-foreground"> bertha.haas1@gmail.com</span> to arrange drop-off or pickup.
                   </p>
                   <p>
                     Monetary gifts are also appreciated. Bank/Mobile Money details will be shared upon request while we finalize our online donation page.
