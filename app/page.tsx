@@ -124,7 +124,7 @@ export default function HomePage() {
                     non-perishable food items, toiletries, and gently used laptops and phones.
                   </p>
                   <p>
-                    To donate items, please call <span className="font-medium text-foreground">+233 55 697 6681</span> or email
+                    To donate items, please call <span className="font-medium text-foreground">+233 55 697 6681</span> or <span className="font-medium text-foreground">+1 (406) 599-2615</span> or email
                     <span className="font-medium text-foreground"> bertha.haas1@gmail.com</span> to arrange drop-off or pickup.
                   </p>
                   <p>
